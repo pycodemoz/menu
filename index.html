@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <header>
     <h1>SITE DE NOTÍCIAS</h1>
-    <menu>
+    <i id="imenu" class="material-icons md-dark" onclick="callMenu()">menu</i>
+    <menu id="itens">
       <ul>
         <li>
           <a href="#">Desporto</a>
@@ -38,4 +40,15 @@
       <p>&copy;2025 Jornal Kwachena</p>
   </footer>
 </body>
+  <script>
+
+     function callMenu(){
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+          }
+        }
+        
+  </script>
 </html>
