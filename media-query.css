@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Dispositivos 
+-----------------
+Telas pequenas : até 600px;
+Celulares: de 600px até 768px;
+Tabletes: de 768px até 992px e
+Telas grandes: acima de 1200px.
+*/
+
+@media screen and (min-width: 768px) {
+  i#imenu {
+    display: none;
+  }
+
+  menu {
+    display: block;
+  }
+
+  menu > ul > li {
+    display: inline-block;
+  }
+
+  main {
+    width: 768px;
+  }
+}
